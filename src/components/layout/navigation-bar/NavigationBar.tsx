@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { NAVIGATION_LINKS } from 'config/Navigation';
+import { NAVIGATION_LINKS } from 'components/layout/navigation-bar/NavigationLinks';
 
 export default function NavigationBar() {
 
