@@ -23,16 +23,9 @@
     "noFallthroughCasesInSwitch": true,
     "ignoreDeprecations": "6.0",
     "baseUrl": ".",
+
     "paths": {
-      "api/*": ["src/api/*"],
-      "assets/*": ["src/assets/*"],
-      "components/*": ["src/components/*"],
-      "config/*": ["src/app/config/*"],
-      "hooks/*": ["src/shared/hooks/*"],
-      "pages/*": ["src/pages/*"],
-      "services/*": ["src/services/*"],
-      "types/*": ["src/shared/types/*"],
-      "util/*": ["src/util/*"],
+      "@/*": ["./src/*"],
     }
   },
   "include": ["src"]

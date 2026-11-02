@@ -1,0 +1,31 @@
+.button {
+    user-select: none;
+    background-color: var(--color_buttons);
+    color: var(--font_color_white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: var(--border);
+    border: var(--border) solid var(--color_borders);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: var(--color_selection);
+}
+
+.button:active {
+    color: var(--font_color_grey);
+    background-color: var(--color_background);
+    transition: background-color 0.01s;
+}
+
+@media (max-width: 1080px) {
+    .button:active {
+        background-color: var(--color_objects);
+    }
+}

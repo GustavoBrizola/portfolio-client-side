@@ -1,17 +1,16 @@
-import { NavLink } from 'react-router-dom';
-import { NAVIGATION_LINKS } from 'components/layout/navigation-bar/NavigationLinks';
+import type { PropsWithChildren } from 'react'
+import './NavigationBar.module.css'
 
-export default function NavigationBar() {
+interface NavigationBarProps {}
 
-    return (
-        <>
-        <nav>
-          <ul>
-            {NAVIGATION_LINKS.map(link => (
-              <NavLink key={link.id} to={link.path}>{link.label}</NavLink>
-            ))}
-          </ul>
-        </nav>
-        </>
-    )
+const NavigationBar = ({}: PropsWithChildren<NavigationBarProps>) => {
+  return (
+    <nav className='navigationBar'>
+      <div className='section'>
+
+      </div>
+    </nav>
+  )
 }
+
+export default NavigationBar

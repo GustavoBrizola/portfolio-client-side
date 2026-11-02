@@ -1,12 +1,14 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Home from 'pages/home/Home';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { routes } from './config/Routes';
+import '@/app/Main.css'
 
 export default function App() {
   return (
       <Router>
         <Routes>
-          <Route path="/" element={<Navigate to="/home" replace />} />
-          <Route path="/home" element={<Home />} />
+          {routes.map((route) => (
+            <Route key={route.path} path={route.path} element={route.element} />
+          ))}
         </Routes>
       </Router>
   );

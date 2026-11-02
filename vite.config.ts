@@ -19,15 +19,7 @@ export default defineConfig(({ mode }) => {
 
     resolve: {
       alias: {
-        'api': path.resolve(import.meta.dirname, './src/api'),
-        'assets': path.resolve(import.meta.dirname, './src/assets'),
-        'components': path.resolve(import.meta.dirname, './src/components'),
-        'config': path.resolve(import.meta.dirname, './src/config'),
-        'hooks': path.resolve(import.meta.dirname, './src/hooks'),
-        'pages': path.resolve(import.meta.dirname, './src/pages'),
-        'services': path.resolve(import.meta.dirname, './src/services'),
-        'types': path.resolve(import.meta.dirname, './src/types'),
-        'util': path.resolve(import.meta.dirname, './src/util'),
+        '@': path.resolve(import.meta.dirname, './src'),
       }
     }
   }
