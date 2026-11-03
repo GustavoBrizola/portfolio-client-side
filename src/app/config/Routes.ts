@@ -1,42 +1,44 @@
-import React, { type JSX } from 'react';
-import Home from '@/pages/home/Home';
-import About from '@/pages/about/About';
-import Projects from '@/pages/projects/Projects';
-import Contact from '@/pages/contact/Contact';
-import Resume from '@/pages/resume/Resume';
+import type { RouteObject } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+import { createElement } from 'react';
 
-export interface AppRoute {
-  path: string;
-  element: JSX.Element;
-  label: string;
-}
+import Home from '@/pages/home';
+import About from '@/pages/about';
+import Resume from '@/pages/resume';
+import Contact from '@/pages/contact';
+import Projects from '@/pages/projects';
 
-export const routes: AppRoute[] = [
+const appRoutes: RouteObject[] = [
   {
-    path:     '/home',
-    element:  React.createElement(Home),
-    label:    'Home',
+    index: true,
+    path: '*',
+    element: createElement(Navigate, { to: 'home', replace: true }),
   },
   {
-    path:     '/about',
-    element:  React.createElement(About),
-    label:    'About',
+    path: 'home',
+    element: createElement(Home),
+    children: [{}],
   },
   {
-    path:     '/projects',
-    element:  React.createElement(Projects),
-    label:    'Projects',
+    path: 'about',
+    element: createElement(About),
+    children: [{}],
   },
   {
-    path:     '/contact',
-    element:  React.createElement(Contact),
-    label:    'Contact',
+    path: 'resume',
+    element: createElement(Resume),
+    children: [{}],
   },
   {
-    path:     '/resume',
-    element:  React.createElement(Resume),
-    label:    'Resume',
+    path: 'contact',
+    element: createElement(Contact),
+    children: [{}],
+  },
+  {
+    path: 'projects',
+    element: createElement(Projects),
+    children: [{}],
   },
 ];
 
-export const getRouteByPath = (path: string) => routes.find(route => route.path === path);
+export default appRoutes;

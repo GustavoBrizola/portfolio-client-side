@@ -1,15 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { routes } from './config/Routes';
-import '@/app/Main.css'
+import { BrowserRouter, useRoutes } from 'react-router-dom';
+import appRoutes from './config/Routes';
+import '@/app/App.css';
 
-export default function App() {
+function AppRoutes() {
+  return useRoutes(appRoutes);
+}
+
+function App() {
   return (
-      <Router>
-        <Routes>
-          {routes.map((route) => (
-            <Route key={route.path} path={route.path} element={route.element} />
-          ))}
-        </Routes>
-      </Router>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
+
+export default App;

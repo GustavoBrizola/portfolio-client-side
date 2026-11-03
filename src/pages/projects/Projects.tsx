@@ -1,7 +1,9 @@
-export default function Projects() {
+function Projects() {
     return (
         <main>
             
         </main>
     )
 }
+
+export default Projects;

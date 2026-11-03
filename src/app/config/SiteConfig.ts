@@ -1,4 +1,4 @@
-export const SiteConfig = {
+const siteConfig = {
   name: "Portfolio",
   version: "v2.0",
   description: "Main hub to present personal projects and work for the public",
@@ -16,3 +16,5 @@ export const SiteConfig = {
     },
   },
 };
+
+export default siteConfig;
