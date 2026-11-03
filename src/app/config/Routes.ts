@@ -12,7 +12,7 @@ const appRoutes: RouteObject[] = [
   {
     index: true,
     path: '*',
-    element: createElement(Navigate, { to: 'home', replace: true }),
+    element: createElement(Navigate, { to: '/home', replace: true }),
   },
   {
     path: 'home',
