@@ -2,7 +2,7 @@ import '@testing-library/jest-dom/vitest';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, useLocation, useRoutes } from 'react-router-dom';
 import { describe, expect, it, vi } from 'vitest';
-import appRoutes from './config/Routes';
+import appRoutes from './config/Route';
 
 vi.mock('@/pages/home', () => ({ default: () => <main>Home page</main> }));
 vi.mock('@/pages/about', () => ({ default: () => <main>About page</main> }));

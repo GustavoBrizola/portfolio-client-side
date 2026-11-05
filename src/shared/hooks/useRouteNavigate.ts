@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-// import { getRouteByPath } from '@/app/config/Routes';
-import getRouteByPath from '@/shared/util/getRoutebyPath';
+import getRouteByPath from '@/shared/util/getRouteData';
 
 const useRouteNavigate = (urlPath: string) => {
   const navigate = useNavigate();

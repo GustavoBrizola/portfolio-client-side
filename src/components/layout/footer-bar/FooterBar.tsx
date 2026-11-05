@@ -1,8 +1,10 @@
 import './FooterBar.module.css'
 
-export default function FooterBar() {
+function FooterBar() {
     return (
         <>
         </>
     )
 }
+
+export default FooterBar;

@@ -1,12 +1,11 @@
-// import styles from './ContentDisplay.module.css'
+import './ContentDisplay.module.css'
 
 
-
-const ContentDisplay: React.FC = ({}) => {
+const ContentDisplay = () => {
     return (
         <>
         </>
     )
 }
 
-export default ContentDisplay
+export default ContentDisplay;

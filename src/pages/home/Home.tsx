@@ -1,15 +1,19 @@
+// Depedencies
 
-import ContentDisplay from '@/components/layout/content-display/ContentDisplay';
-import FooterBar from '@/components/layout/footer-bar/FooterBar';
+// Imports 
+import ContentDisplay from '@/components/layout/content-display';
+import FooterBar from '@/components/layout/footer-bar';
+import NavigationBar from '@/components/layout/navigation-bar';
+import TopBar from '@/components/layout/top-bar';
 
+function Home() { 
 
-function Home() {
-
-    // console.log(getRouteByPath('contact'));
-    
    
 	return (
         <main id="home"> 
+            <TopBar>
+                {/* <NavigationBar/> */}
+            </TopBar>
             <ContentDisplay/> 
             <FooterBar/>
         </main>
