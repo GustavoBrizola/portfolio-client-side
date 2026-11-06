@@ -13,7 +13,7 @@ const NavigationBar = ({}: PropsWithChildren<NavigationBarProps>) => {
       <div className={styles.section}>
         {Object.entries(navgitationTabs).map(([key, value]) => (
           <a id={value.id} className="nav-link" key={key} onClick={(e) => { e.preventDefault();}}>
-            {value.icon && <img src={value.icon} style={{width: '18px'}}/>}
+            {value.icon && <img src={value.icon} alt='' style={{width: '18px'}}/>}
             {value.label && <span>{value.label}</span>}
           </a>
         ))}
