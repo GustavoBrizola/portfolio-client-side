@@ -1,10 +1,13 @@
-import { Outlet } from "react-router-dom";
+import NavigationBar from "@/components/layout/navigation-bar";
+import ContentDisplay from "@/components/layout/content-display";
 
 function About() {
     return (
-        <main>
-            <nav></nav>            
-            <Outlet/>
+        <main id='about'>
+            <NavigationBar/>
+            <ContentDisplay>
+                
+            </ContentDisplay>
         </main>
     )
 }

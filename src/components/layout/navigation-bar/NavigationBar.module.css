@@ -1,20 +1,3 @@
-.navigationBar {
-    --navigationBar_height: 80px;
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--navigationBar_height);
-    box-sizing: border-box;
-
-
-.navigationBar > * {
-    display: flex;
-    align-items: center;
-}
-
 .section {
     background-color: var(--color_objects);
     display: flex;
@@ -23,7 +6,7 @@
     position: fixed;
     border-bottom: var(--border) solid var(--color_borders);
     width: 100%;
-    height: var(--navigationBar_height);
+    height: var(--topBar_height);
     left: 0;
     top: 0;
     z-index: -1;
@@ -44,34 +27,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.section a:hover {
-    background-color: var(--color_borders);
-}
-
-.section a:active {
-    background-color: var(--color_selection);
-}
-
-@media (max-width: 1080px) {
-    .navigationBar {
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--color_background);
-        width: 100%;
-        height: 100px;
+    
+    .section a:hover {
+        background-color: var(--color_borders);
     }
-    .navigationBar > * {
-        display: block;
+    
+    .section a:active {
+        background-color: var(--color_selection);
     }
-    .section {
-        border-top: var(--border) solid var(--color_borders);
-        transform: translateY(100px);
-        overflow-y: hidden;
-        overflow-x: scroll;
-        scrollbar-width: none;
+    
+    @media (max-width: 1080px) {
+        .navigationBar {
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color_background);
+            width: 100%;
+            height: 100px;
+        }
+        .navigationBar > * {
+            display: block;
+        }
+        .section {
+            border-top: var(--border) solid var(--color_borders);
+            transform: translateY(100px);
+            overflow-y: hidden;
+            overflow-x: scroll;
+            scrollbar-width: none;
+        }
     }
-}
 }

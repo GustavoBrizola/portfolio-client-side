@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
-import getRouteByPath from '@/shared/util/getRouteData';
+import getRouteData from '@/shared/util/getRouteData';
 
-const useRouteNavigate = (urlPath: string) => {
+// Redirects to a route that exist
+const useRouteNavigate = () => {
   const navigate = useNavigate();
-
-  return navigate(getRouteByPath(urlPath)?.path ?? urlPath);
+  return (urlPath: string) => navigate(getRouteData(urlPath)?.path ?? urlPath);
 };
 
 export default useRouteNavigate;
