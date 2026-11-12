@@ -1,7 +1,7 @@
 /**
  * Quicksort is a sorting algorithm capable of faster sorting than others.
  * Uses Hoare partition technique and Divide and Conquer for faster performance.
- * It also use recursive methods with Hoare to sort all tha array.
+ * It also use recursive methods with Hoare to sort all the array.
  * @param {array} array The array to sort
  * @returns The array properly sorted
  *

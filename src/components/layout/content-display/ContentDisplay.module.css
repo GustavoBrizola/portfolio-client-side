@@ -12,8 +12,8 @@
 .content {
     background-color: var(--color_objects);
     /* These two determines if the backgroud is visible  */
-    /* background: none; */
-    border: var(--border) solid var(--color_borders);
+    background: none;
+    /* border: var(--border) solid var(--color_borders); */
     border-bottom: 0;
     border-top: 0;
     top: 0;

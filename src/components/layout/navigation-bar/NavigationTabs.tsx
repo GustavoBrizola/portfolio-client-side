@@ -13,8 +13,14 @@ interface NavigationTabsInterface {
     icon: string | undefined;
 }
 
-type NavigationTabsName = 'home' | 'projects' | 'resume' | 'about' | 'contact';
-type NavigationTabs = Record<NavigationTabsName, NavigationTabsInterface>;
+type NavigationTabsName = [
+    'home', 
+    'projects', 
+    'resume', 
+    'about',
+    'contact',
+];
+type NavigationTabs = Record<NavigationTabsName[number], NavigationTabsInterface>;
 
 // Bussiness Logic
 // it holds route's ID and path, but not the elements
