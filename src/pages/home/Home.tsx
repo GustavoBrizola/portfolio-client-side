@@ -2,7 +2,7 @@ import ContentDisplay from '@/components/layout/content-display';
 import FooterBar from '@/components/layout/footer-bar';
 import NavigationBar from '@/components/layout/navigation-bar';
 import TopBar from '@/components/layout/top-bar';
-import BurguerMenu, { BurguerMenuButton } from '@/components/layout/burguer-menu';
+import { BurguerMenuButton } from '@/components/layout/burguer-menu';
 
 function Home() { 
 	return (

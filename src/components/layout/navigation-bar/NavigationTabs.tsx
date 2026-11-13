@@ -4,7 +4,6 @@ import HomeIcon from '@/assets/icons/ui/home_white.svg';
 import ProjectsIcon from '@/assets/icons/ui/projects_white.svg';
 import ResumeIcon from '@/assets/icons/ui/resume_white.svg';
 import AboutIcon from '@/assets/icons/ui/info_white.svg';
-import ContactIcon from '@/assets/icons/ui/contact_white.svg';
 
 interface NavigationTabsInterface {
     id: string | undefined;
