@@ -18,7 +18,6 @@ type NavigationTabsName = [
     'projects', 
     'resume', 
     'about',
-    'contact',
 ];
 type NavigationTabs = Record<NavigationTabsName[number], NavigationTabsInterface>;
 
@@ -31,7 +30,6 @@ const navigationTabs: NavigationTabs = {
     projects:   {id: routeConfig.projects.id, path: routeConfig.projects.path,  label: 'Projects',  icon: ProjectsIcon,},
     resume:     {id: routeConfig.resume.id,   path: routeConfig.resume.path,    label: 'Resume',    icon: ResumeIcon,},
     about:      {id: routeConfig.about.id,    path: routeConfig.about.path,     label: 'About',     icon: AboutIcon,},
-    contact:    {id: routeConfig.contact.id,  path: routeConfig.contact.path,   label: 'Contact',   icon: ContactIcon,},
 }
 
 export default navigationTabs;

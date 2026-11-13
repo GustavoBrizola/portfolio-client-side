@@ -17,7 +17,7 @@ const NavigationBar = () => {
           key={key} 
           onClick={() => { if (value.path && value.path !== location.pathname) { routeNavigate(value.path); }}}
           >
-            {value.icon && <img src={value.icon} alt='' style={{width: '18px'}}/>}
+            {value.icon && <img src={value.icon} alt={value.label}/>}
             {value.label && <span>{value.label}</span>}
           </a>
         ))}

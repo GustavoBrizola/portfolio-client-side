@@ -6,7 +6,6 @@ import routeConfig from './RouteConfig';
 import Home from '@/pages/home';
 import About from '@/pages/about';
 import Resume from '@/pages/resume';
-import Contact from '@/pages/contact';
 import Projects from '@/pages/projects';
 
 
@@ -47,12 +46,6 @@ const appRoutes: RouteObject[] = [
     id: routeConfig.resume.id,
     path: routeConfig.resume.path,
     element: createElement(Resume),
-    children: [{}],
-  },
-  {
-    id: routeConfig.contact.id,
-    path: routeConfig.contact.path,
-    element: createElement(Contact),
     children: [{}],
   },
   {
