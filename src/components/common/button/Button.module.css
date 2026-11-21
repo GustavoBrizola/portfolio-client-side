@@ -1,31 +1,68 @@
 .button {
-    user-select: none;
-    background-color: var(--color_buttons);
-    color: var(--font_color_white);
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: var(--border);
-    border: var(--border) solid var(--color_borders);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    cursor: pointer;
-    transition: background-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: inherit;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
 }
 
-.button:hover {
-    background-color: var(--color_selection);
+/* Accessibility Focus Ring */
+.button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.35);
 }
 
-.button:active {
-    color: var(--font_color_grey);
-    background-color: var(--color_background);
-    transition: background-color 0.01s;
+/* Disabled State */
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
-@media (max-width: 1080px) {
-    .button:active {
-        background-color: var(--color_objects);
-    }
+/* --- Sizes --- */
+.small {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.medium {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.large {
+  padding: 0.75rem 1.25rem;
+  font-size: 1.125rem;
+}
+
+/* --- Variants --- */
+.primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+.primary:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.secondary {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  border-color: #d1d5db;
+}
+.secondary:hover:not(:disabled) {
+  background-color: #e5e7eb;
+}
+
+.danger {
+  background-color: #a72140;
+  color: #ffffff;
+}
+.danger:hover:not(:disabled) {
+  background-color: #b91c1c;
 }

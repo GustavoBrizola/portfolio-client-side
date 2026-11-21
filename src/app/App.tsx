@@ -1,4 +1,5 @@
 import { BrowserRouter, useRoutes } from 'react-router-dom';
+import { Suspense } from 'react';
 import appRoutes from './config/Route';
 import '@/app/App.css';
 
@@ -9,7 +10,9 @@ function AppRoutes() {
 function App() {
   return (
     <BrowserRouter>
-      <AppRoutes />
+      <Suspense>
+        <AppRoutes/>
+      </Suspense>
     </BrowserRouter>
   );
 }

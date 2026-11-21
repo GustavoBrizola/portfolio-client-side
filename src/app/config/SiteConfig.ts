@@ -1,6 +1,5 @@
 const siteConfig = {
   name: "Portfolio",
-  version: "v2.0",
   description: "Main hub to present personal projects and work for the public",
   author: "Gustavo Brizola",
   dates: {
