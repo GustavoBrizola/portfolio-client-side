@@ -1,0 +1,46 @@
+.academicDisplay {
+    background: var(--color_objects);
+    /* border: var(--border) solid var(--color_borders); */
+    /* user-select: text; */
+    border-radius: var(--border );
+    padding: 10px 5px;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    width: 180px;
+    min-height: fit-content;
+    max-height: 500px;
+    margin: 10px;
+
+    img {
+        width: 120px; 
+        min-height: 150px;
+        padding: -20px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    h5 {
+        text-align: center; 
+        font-style: italic;
+        font-weight: lighter;
+        height:min-content;
+        margin: 0;
+    }
+    h3 {
+        /* line-height: 1.2; */
+        text-align: center; 
+        /* width:100%;  */
+        margin: 0 auto; 
+        /* overflow-wrap: break-word; */
+        /* word-wrap: break-word; */
+    }
+    span {
+        align-self: end;
+        line-height: 1.2;
+        text-align: center; 
+        width:100%; 
+        margin: 0 auto; 
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+}

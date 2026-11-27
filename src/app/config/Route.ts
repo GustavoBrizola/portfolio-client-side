@@ -20,9 +20,9 @@ const appRoutes: RouteObject[] = [
     children: [{}],
   },
   {
-    id: routeConfig.about.id,
-    path: routeConfig.about.path,
-    element: createElement(lazy(() => import('@/pages/about'))),
+    id: routeConfig.profile.id,
+    path: routeConfig.profile.path,
+    element: createElement(lazy(() => import('@/pages/profile'))),
     children: [{}],
   },
   {

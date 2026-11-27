@@ -10,6 +10,12 @@
   cursor: pointer;
   transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
   user-select: none;
+  margin: 5px;
+
+  img {
+    width: 20px;
+    border-radius: 0;
+  }
 }
 
 /* Accessibility Focus Ring */
@@ -27,7 +33,7 @@
 
 /* --- Sizes --- */
 .small {
-  padding: 0.375rem 0.75rem;
+  padding: 0.375rem;
   font-size: 0.875rem;
 }
 
@@ -42,6 +48,16 @@
 }
 
 /* --- Variants --- */
+.default {
+  background-color: var(--color_buttons);
+  color: #ffffff;
+}
+
+.no-background {
+  background: none;
+  color: #ffffff;
+}
+
 .primary {
   background-color: #2563eb;
   color: #ffffff;

@@ -12,9 +12,12 @@ export default defineConfig(({ mode }) => {
 
     // Development Environment port
     server: {
-      port: env.VITE_PORT ? Number(env.VITE_PORT) : 3000,
+      port: env.VITE_PORT ? Number(`${env.VITE_PORT}`) : 3000,
       strictPort: true,
       proxy: {},
+    },
+    preview: {
+      port: 8080,
     },
 
     resolve: {

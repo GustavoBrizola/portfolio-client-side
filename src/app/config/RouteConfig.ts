@@ -5,8 +5,8 @@ const routeConfig = {
     home:       { id: 'home',       path: '/home' },
     projects:   { id: 'projects',   path: '/projects' },
     resume:     { id: 'resume',     path: '/resume' },
-    about:      { id: 'about',      path: '/about' },
     contact:    { id: 'contact',    path: '/contact' },
+    profile:    { id: 'profile',      path: '/profile' },
 } as const;
 
 export default routeConfig;

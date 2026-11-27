@@ -1,0 +1,7 @@
+.githubContributionGraph {
+    user-select: none;
+    
+    div {
+        scrollbar-width: none;
+    }
+}

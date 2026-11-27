@@ -13,6 +13,7 @@
   "dependencies": {
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-github-calendar": "^5.0.9",
     "react-pdf": "^11.0.0",
     "react-router-dom": "^7.18.4"
   },

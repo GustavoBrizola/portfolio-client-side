@@ -1,0 +1,5 @@
+.horizontalLine {
+    color: var(--color_borders);
+    border-top-width: 0px;
+    border-bottom-width: 3px;
+}

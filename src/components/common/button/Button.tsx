@@ -12,8 +12,8 @@ interface ButtonInterface extends ButtonHTMLAttributes<HTMLButtonElement> {
 const Button = ({
     children,
     className = '',
-    variant = 'primary',
-    size = 'md',
+    variant = 'default',
+    size = 'small',
     isDisabled = false,
     type = 'button',
     ...props

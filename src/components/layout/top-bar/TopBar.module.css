@@ -1,4 +1,4 @@
-.topBar {
+.topBar{
     --topBar_height: 60px;
     background-color: var(--color_objects);
     position: fixed;
@@ -15,6 +15,7 @@
     top: 0;
     transition: transform 200ms ease;
 }
+
 
 .topBarHidden {
     transform: translateY(-100%);

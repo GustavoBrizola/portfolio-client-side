@@ -5,7 +5,7 @@ import { describe, expect, it, vi } from 'vitest';
 import appRoutes from './config/Route';
 
 vi.mock('@/pages/home', () => ({ default: () => <main>Home page</main> }));
-vi.mock('@/pages/about', () => ({ default: () => <main>About page</main> }));
+vi.mock('@/pages/profile', () => ({ default: () => <main>profile page</main> }));
 vi.mock('@/pages/resume', () => ({ default: () => <main>Resume page</main> }));
 vi.mock('@/pages/contact', () => ({ default: () => <main>Contact page</main> }));
 vi.mock('@/pages/projects', () => ({ default: () => <main>Projects page</main> }));
@@ -31,7 +31,7 @@ function renderRoute(path: string) {
 describe('application routing', () => {
   it.each([
     ['/home', 'Home page'],
-    ['/about', 'About page'],
+    ['/profile', 'profile page'],
     ['/resume', 'Resume page'],
     ['/contact', 'Contact page'],
     ['/projects', 'Projects page'],

@@ -1,0 +1,22 @@
+{
+    "academic": {
+        "fadergs": {
+            "name":"University Center FADERGS",
+            "gratification":"Barchelor in Computer Science",
+            "level":"Barchelor",
+            "year": 2025
+        },
+        "googleCloud":{
+            "name":"Google Skills",
+            "gratification":"Google Cloud Computing Foundations",
+            "level":"Badge",
+            "year": 2025
+        },
+        "oracleCloud":{
+            "name":"Oracle University",
+            "gratification":"Oracle Cloud Infrastructure Foundations Associate",
+            "level":"Badge",
+            "year": 2025
+        }
+    }
+}

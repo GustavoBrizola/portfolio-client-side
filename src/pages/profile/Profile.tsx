@@ -2,19 +2,26 @@ import NavigationBar from "@/components/layout/navigation-bar";
 import FooterBar from "@/components/layout/footer-bar";
 import ContentDisplay from "@/components/layout/content-display";
 import TopBar from "@/components/layout/top-bar";
+import styles from './Profile.module.css'
 
-function About() {
+import ProfileBlock from "./components/ProfileBlock";
+import AcademicBlock from "./components/AcademicBlock";
+import AboutMeBlock from "./components/AboutMeBlock";
+
+function profile() {
     return (
-        <main id='about'>
+        <main id='profile' style={styles}>
             <TopBar>
                 <NavigationBar/>
             </TopBar>
             <ContentDisplay>
-                <span>Nothing here yet</span>
+                <ProfileBlock/>
+                <AcademicBlock/>
+                <AboutMeBlock/>   
             </ContentDisplay> 
             <FooterBar/>
         </main>
     )
 }
 
-export default About;
+export default profile;
